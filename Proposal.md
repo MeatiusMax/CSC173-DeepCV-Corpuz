@@ -1,7 +1,7 @@
 
 # CSC173 Deep Computer Vision Project Proposal
 **Student:** [Joseph Jr. Q Corpuz], [2020-1360]  
-**Date:** [12-08-2025]
+**Date:** [12-12-2025]
 
 ## 1. Project Title 
 [ASL Sign Recognition Using Real-Time Computer Vision]
