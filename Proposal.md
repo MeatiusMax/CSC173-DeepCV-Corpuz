@@ -1,29 +1,30 @@
 
 # CSC173 Deep Computer Vision Project Proposal
 **Student:** [Joseph Jr. Q Corpuz], [2020-1360]  
-**Date:** [Submission Date]
+**Date:** [12-08-2025]
 
 ## 1. Project Title 
-[Enter the title of your project here]
+[ASL Sign Recognition Using Real-Time Computer Vision]
 
 ## 2. Problem Statement
-[Describe succinctly (3-5 sentences) the real-world computer vision problem your project addresses, including motivation and local relevance if possible.]
+[American Sign Language, like all languages, is difficult to learn. Most ASL learning tools require internet, subcription, and often lack real time visual validation. This project aims to address this by building a accesible ASL alphabet recognizer that provides feedback using standard webcams.]
 
 ## 3. Objectives
-- Develop and train a deep computer vision model achieving target performance metrics
-- Implement complete training pipeline including data preprocessing, model training, validation, and evaluation.
+- Develop and train a lightweight CNN model to classify ASL hand signs for letters A-Z and a "nothing" class
+- Achieve At least ≥85% validation accuracy on a test set.
+- Implement the pipeline : data loading -> Preprocessing -> Training -> Evaluation -> Real time inference using webcam.
 
 ## 4. Dataset Plan
-- Source: [Kaggle link/dataset name + expected size]
-- Classes: [List target classes]
-- Acquisition: [Download/public collection plan]
+- Source: [https://www.kaggle.com/datasets/grassknoted/asl-alphabet?spm=a2ty_o01.29997173.0.0.4d3b5171SWqFym (87,000 images with 3000 per class)]
+- Classes: [A, B, C, D, E, F, G, H, I, J, K, L, M, N, O, P, Q, R, S, T, U, V, W, X, Y, Z, nothing]
+- Acquisition: [Manually download and extract the asl_alphabet_train folder into the project directory on Windows.]
 
 ## 5. Technical Approach
-- Architecture sketch
-- Model: [YOLOv8n, ResNet50 fine-tuned, etc.]
-- Framework: [PyTorch/TensorFlow]
-- Hardware: [Google Colab, local GPU, etc.]
+- Custom CNN with 3 convolutional blocks (Conv → ReLU → MaxPool), followed by dense layers and dropout.
+- Model: [From Scratch CNN.]
+- Framework: [Tensorflow + OpenCV for video]
+- Hardware: [Local Machine with no GPU]
 
 ## 6. Expected Challenges & Mitigations
-- Challenge: Small dataset
-- Solution: Augmentation 
+- Challenge: Lacking GPU; Possible Overfitting; Poor Tracking on different users or lighting conditions.
+- Solution: Use small image resolution and avoid using heavy architecture; Apply data randomization and incude dropout layer; Encourage stable hand placement and lighting.
