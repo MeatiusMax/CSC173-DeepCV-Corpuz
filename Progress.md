@@ -1,25 +1,25 @@
 # CSC173 Deep Computer Vision Project Progress Report
-**Student:** [Your Name], [ID]  
+**Student:** [Joseph Jr. Q. Corpuz], [2020-1360]  
 **Date:** [Progress Submission Date]  
-**Repository:** [https://github.com/yourusername/CSC173-DeepCV-YourLastName](https://github.com/yourusername/CSC173-DeepCV-YourLastName)  
-**Commits Since Proposal:** [X commits] | **Last Commit:** [Date]
+**Repository:** [https://github.com/MeatiusMax/CSC173-DeepCV-Corpuz](https://github.com/yourusername/CSC173-DeepCV-YourLastName)  
+**Commits Since Proposal:** [10 commits] | **Last Commit:** [12-16-2025]
 
 ## 📊 Current Status
 | Milestone | Status | Notes |
 |-----------|--------|-------|
-| Dataset Preparation | ✅ Completed | [X] images downloaded/preprocessed |
-| Initial Training | ✅ In Progress | [X] epochs completed |
+| Dataset Preparation | ✅ Completed | images downloaded|
+| Initial Training | ⏳ Pending | To be Coded|
 | Baseline Evaluation | ⏳ Pending | Training ongoing |
 | Model Fine-tuning | ⏳ Not Started | Planned for tomorrow |
 
 ## 1. Dataset Progress
-- **Total images:** [e.g., 4,200]
-- **Train/Val/Test split:** [e.g., 70%/15%/15% or 2,940/630/630]
-- **Classes implemented:** [e.g., 6 classes: plastic, metal, paper, glass, organic, other]
-- **Preprocessing applied:** Resize(640), normalization, augmentation (flip, rotate, brightness)
+- **Total images:** 
+- **Train/Val/Test split:** 
+- **Classes implemented:** 
+- **Preprocessing applied:** 
 
 **Sample data preview:**
-![Dataset Sample](images/dataset_sample.png)
+![Dataset Sample](archive/asl_alphabet_test/asl_alphabet_test/A_test.jpg)
 
 ## 2. Training Progress
 
@@ -38,13 +38,11 @@
 ## 3. Challenges Encountered & Solutions
 | Issue | Status | Resolution |
 |-------|--------|------------|
-| CUDA out of memory | ✅ Fixed | Reduced batch_size from 32→16 |
-| Class imbalance | ⏳ Ongoing | Added class weights to loss function |
-| Slow validation | ⏳ Planned | Implement early stopping |
+| Git acting up | ✅ Fixed | Slowly commited the dataset |
 
 ## 4. Next Steps (Before Final Submission)
-- [ ] Complete training (50 more epochs)
-- [ ] Hyperparameter tuning (learning rate, augmentations)
-- [ ] Baseline comparison (vs. original pre-trained model)
+- [ ] Create the training code
+- [ ] Train and then evaluate the training performance
+- [ ] Implement real-time webcam
 - [ ] Record 5-min demo video
 - [ ] Write complete README.md with results
