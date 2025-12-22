@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 import os
 
 # configurations
-DATASET_DIR = "C:\\Users\\Corpuz\\Desktop\\CSC173-DeepCV-Corpuz\\archive\\asl_alphabet_train\\asl_alphabet_train"
+DATASET_DIR = "archive/asl_alphabet_train/asl_alphabet_train"
 IMG_SIZE = 64
 BATCH_SIZE = 32
 EPOCHS = 10

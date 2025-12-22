@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 
 #configurations
 MODEL_PATH = "model/asl_cnn_model.h5"
-IMG_SIZE = 64  # must match training
+IMG_SIZE = 64 
 CLASS_NAMES = [
     'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 
     'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z', 'nothing'
