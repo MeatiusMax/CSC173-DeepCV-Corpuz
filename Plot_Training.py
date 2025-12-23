@@ -14,7 +14,7 @@ model = load_model(MODEL_PATH)
 print("Model loaded successfully.")
 
 # ==========================
-# SIMULATED HISTORY
+# SIMULATED HISTORY 
 # ==========================
 history = {
     'accuracy': [0.4039, 0.7186, 0.8235, 0.8695, 0.8961, 0.9147, 0.9289, 0.9376, 0.9433, 0.9496],

@@ -3,8 +3,7 @@
 *Mindanao State University - Iligan Institute of Technology*  
 **Student:** [Joseph Jr. Q. Corpuz], [2020-1360]  
 **Semester:** [e.g., AY 2025-2026 Sem 1]  
-[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org) [![PyTorch](https://img.shields.io/badge/PyTorch-2.0-orange)](https://pytorch.org)
-
+[![Python](https://img.shields.io/badge/Python-3.8+-blue)](https://python.org) [![TensorFlow](https://img.shields.io/badge/TensorFlow-2.20-orange)]
 ## Abstract
 [This project aims to develop an ASL Recognition Software using Computer vision. Using a convolutional lightweight neural network (CNN). The system defines hand gestures into its corresponding letters from A-Z as well as class "nothing". All of this is done through a live webcam input. Using the publicly available ASL Alphabet Dataset, which has 87,000 images, 3000 per class, a custom CNN with 3 convolutional blocks followed by a dense layer with dropout wasa trained from scratch. Data augmentation techniques is also introduce such as rotation, shifts, zooms and flips to improve generalization. The trained model achieves a validation accuracy exceeding 70% and can predict ASL letters in real-time displating the class and confidence on the video feed. This tool is meant to assist beginners and educators in learning ASL in real time and providing a foundation for future extensions.][web:25][web:41]
 
@@ -47,7 +46,7 @@
 - Fully connected layer with 128 neurons, followed by 50% dropout
 - Output layer: 27 neurons with softmax activation
 
-| Parameter s| Value |
+| Parameters| Value |
 |-----------|-------|
 | Batch Size | 32 |
 | Learning Rate | 0.001 |
@@ -55,20 +54,22 @@
 | Optimizer | Adam |
 
 ### Training Code Snippet
-# Compile the model
+
+'''
+#Compile the model
 model.compile(
     optimizer="adam",
     loss="categorical_crossentropy",
     metrics=["accuracy"]
 )
 
-# Train the model
+#Train the model
 history = model.fit(
     train_generator,
     epochs=EPOCHS,
     validation_data=val_generator,
 )
-
+'''
 
 ## Experiments & Results
 ### Metrics
@@ -76,6 +77,9 @@ history = model.fit(
 |-------|---------|-----------|--------|
 | Custom CNN | 0.7188 | 0.6359 | 0.79 |
 
+| Test | Accuracy | Loss |
+|-------|---------|-----------|--------|
+| Test dataset | 1.0000 | 0.0142 |
 
 ![Training Curve](images/training_curve.png)
 
