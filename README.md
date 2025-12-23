@@ -55,21 +55,21 @@
 
 ### Training Code Snippet
 
-'''
-#Compile the model
-model.compile(
-    optimizer="adam",
-    loss="categorical_crossentropy",
-    metrics=["accuracy"]
-)
-
+```python
 #Train the model
 history = model.fit(
     train_generator,
     epochs=EPOCHS,
     validation_data=val_generator,
 )
-'''
+
+#Compile the model
+model.compile(
+    optimizer="adam",
+    loss="categorical_crossentropy",
+    metrics=["accuracy"]
+)
+```
 
 ## Experiments & Results
 ### Metrics
