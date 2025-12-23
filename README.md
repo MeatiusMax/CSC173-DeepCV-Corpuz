@@ -1,4 +1,4 @@
-# [Project Title: e.g., ASL Sign Recognition Using Real-Time Computer Vision]
+# [Project Title: ASL Sign Recognition Using Real-Time Computer Vision]
 **CSC173 Intelligent Systems Final Project**  
 *Mindanao State University - Iligan Institute of Technology*  
 **Student:** [Joseph Jr. Q. Corpuz], [2020-1360]  
