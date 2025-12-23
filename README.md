@@ -105,7 +105,7 @@ model.compile(
 ![Training Curve](images/training_curve.png)
 
 ### Demo
-![Detection Demo](demo/Demo.mp4)
+![Detection Demo](demo/demo.mp4)
 [Video: [CSC173_Corpuz_Final.mp4](demo/CSC173_Corpuz_Final.mp4)] [web:41]
 
 ## Discussion
