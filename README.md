@@ -105,8 +105,8 @@ model.compile(
 ![Training Curve](images/training_curve.png)
 
 ### Demo
-![Detection Demo](demo/detection.gif)
-[Video: [CSC173_YourLastName_Final.mp4](demo/CSC173_YourLastName_Final.mp4)] [web:41]
+![Detection Demo](demo/Demo.mp4)
+[Video: [CSC173_Corpuz_Final.mp4](demo/CSC173_Corpuz_Final.mp4)] [web:41]
 
 ## Discussion
 - Strengths: [Lightweight, CPU-friendly, works in real-time]
